@@ -11,37 +11,15 @@ var SAVE_GEARBIT_FIELD_DELIMITER = "&"
 
 ;
 (function(document, window, index) {
-    var inputs = document.querySelectorAll('.inputFile');
-    Array.prototype.forEach.call(inputs, function(input) {
-        var label = input.nextElementSibling,
-            labelVal = label.innerHTML;
-
-        input.addEventListener('change', function(e) {
-            var fileName = '';
-            fileName = e.target.value.split('\\').pop();
-
-            if (fileName)
-                label.querySelector('span').innerHTML = fileName;
-            else
-                label.innerHTML = labelVal;
-
-            // There should only be one file since the input element doesn't allow for selecting multiple files
-            var selectedFile = this.files[0];
-
-            if (selectedFile) {
-                var reader = new FileReader();
-                reader.onload = parseSaveContents;
-                reader.readAsText(selectedFile);
-            }
-        });
-
-        // Firefox bug fix
-        input.addEventListener('focus', function() {
-            input.classList.add('has-focus');
-        });
-        input.addEventListener('blur', function() {
-            input.classList.remove('has-focus');
-        });
+    var inputFileControl = document.getElementById('inputFile');
+    inputFileControl.addEventListener('change', function(e) {
+      // There should only be one file since the input element doesn't allow for selecting multiple files
+      var selectedFile = this.files[0];
+      if (selectedFile) {
+        var reader = new FileReader();
+        reader.onload = parseSaveContents;
+        reader.readAsText(selectedFile);
+      }
     });
 }(document, window, 0));
 
@@ -64,4 +42,16 @@ function parseSaveContents(e) {
     var gearbitFieldStartIndex = collectibles.indexOf(SAVE_GEARBIT_FIELD_ID) + SAVE_GEARBIT_FIELD_ID.length;
     var gearbitString = collectibles.substring(gearbitFieldStartIndex, collectibles.indexOf(SAVE_COLLECTIBLES_FIELD_DELIMITER, gearbitFieldStartIndex));
     var gearbits = gearbitString.split(SAVE_GEARBIT_FIELD_DELIMITER);
+    
+    var gearbitInfoWrapperControl = document.getElementById("gearbitInfoWrapper");
+    var uploadButtonControl = document.getElementById("uploadButton");
+    
+    gearbitInfoWrapperControl.removeAttribute("contentInvisible");
+    gearbitInfoWrapperControl.className = "content";
+    
+    uploadButtonControl.removeAttribute("content");
+    uploadButtonControl.className = "contentInvisible";
+    
+    var gearbitInfoControl = document.getElementById("gearbitInfo");
+    gearbitInfoControl.innerHTML = gearbits;
 }
