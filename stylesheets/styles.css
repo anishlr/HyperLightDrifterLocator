@@ -7,8 +7,9 @@
 body {
   padding:50px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  color:#fcfaea;
   font-weight:300;
+  background-color: #262626 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,7 +38,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:#a9a9a9;
   font-weight:400;
   text-decoration:none;
   z-index: 2;
@@ -231,8 +232,8 @@ svg {
 
 .inputFile + label {
     display: inline-block;
-    color: #f1e5e6;
-    background-color: #d3394c;
+    color: #fcfaea;
+    background-color: #f51a6a;
     max-width: 80%;
     font-size: 1.25rem;
     text-overflow: ellipsis;
@@ -244,12 +245,13 @@ svg {
 
 .inputFile:focus + label,
 .inputFile + label:hover {
-  background-color: #722040;
-}
-
-.inputFile:focus + label {
-  outline: 1px dotted #000;
-  outline: -webkit-focus-ring-color auto 5px;
+  background-color: #2d2d2d;
+  -o-transition: background-color 0.15s linear;
+  -moz-transition: background-color 0.15s linear;
+  -khtml-transition: background-color 0.15s linear;
+  -webkit-transition: background-color 0.15s linear;
+  -ms-transition: background-color 0.15s linear;
+  transition: background-color 0.15s linear;
 }
 
 .wrapper {
@@ -258,6 +260,7 @@ svg {
 }
 
 .text {
+  margin: 0;
   font-size: 90%;
 }
 
