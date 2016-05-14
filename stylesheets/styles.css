@@ -1,233 +1,230 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 * {
-  z-index: 0;
+    z-index: 0;
 }
 
 body {
-  padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#fcfaea;
-  font-weight:300;
-  background-color: #262626 !important;
+    padding:50px;
+    font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#fcfaea;
+    font-weight:300;
+    background-color: #262626 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
-  margin:0 0 20px;
+    color:#222;
+    margin:0 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+    margin:0 0 20px;
 }
 
 h1, h2, h3 {
-  line-height:1.1;
+    line-height:1.1;
 }
 
 h1 {
-  font-size:28px;
+    font-size:28px;
 }
 
 h2 {
-  color:#393939;
+    color:#393939;
 }
 
 h3, h4, h5, h6 {
-  color:#494949;
+    color:#494949;
 }
 
 a {
-  color:#a9a9a9;
-  font-weight:400;
-  text-decoration:none;
-  z-index: 2;
+    color:#a9a9a9;
+    font-weight:400;
+    text-decoration:none;
+    z-index: 2;
 }
 
 a small {
-  font-size:11px;
-  color:#777;
-  margin-top:-0.6em;
-  display:block;
+    font-size:11px;
+    color:#777;
+    margin-top:-0.6em;
+    display:block;
 }
 
 blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
+    border-left:1px solid #e5e5e5;
+    margin:0;
+    padding:0 0 0 20px;
+    font-style:italic;
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
-  font-size:12px;
+    font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+    color:#333;
+    font-size:12px;
 }
 
 pre {
-  padding:8px 15px;
-  background: #f8f8f8;  
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
+    padding:8px 15px;
+    background: #f8f8f8;  
+    border-radius:5px;
+    border:1px solid #e5e5e5;
+    overflow-x: auto;
 }
 
 table {
-  width:100%;
-  border-collapse:collapse;
+    width:100%;
+    border-collapse:collapse;
 }
 
 th, td {
-  text-align:left;
-  padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
+    text-align:left;
+    padding:5px 10px;
+    border-bottom:1px solid #e5e5e5;
 }
 
 dt {
-  color:#444;
-  font-weight:700;
+    color:#444;
+    font-weight:700;
 }
 
 th {
-  color:#444;
+    color:#444;
 }
 
 img {
-  max-width:100%;
+    max-width:100%;
 }
 
 header, footer {
-  width:270px;
-  float:left;
-  position:fixed;
+    width:270px;
+    float:left;
+    position:fixed;
 }
 
 header ul {
-  list-style:none;
-  height:40px;
-  
-  padding:0;
-  
-  background: #eee;
-  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  
-  border-radius:5px;
-  border:1px solid #d2d2d2;
-  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
-  width:270px;
+    list-style:none;
+    height:40px;
+    padding:0;
+    background: #eee;
+    background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+    background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+    background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+    background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+    background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+    border-radius:5px;
+    border:1px solid #d2d2d2;
+    box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
+    width:270px;
 }
 
 header li {
-  width:89px;
-  float:left;
-  border-right:1px solid #d2d2d2;
-  height:40px;
+    width:89px;
+    float:left;
+    border-right:1px solid #d2d2d2;
+    height:40px;
 }
 
 header ul a {
-  line-height:1;
-  font-size:11px;
-  color:#999;
-  display:block;
-  text-align:center;
-  padding-top:6px;
-  height:40px;
+    line-height:1;
+    font-size:11px;
+    color:#999;
+    display:block;
+    text-align:center;
+    padding-top:6px;
+    height:40px;
 }
 
 strong {
-  color:#222;
-  font-weight:700;
+    color:#222;
+    font-weight:700;
 }
 
 header ul li + li {
-  width:88px;
-  border-left:1px solid #fff;
+    width:88px;
+    border-left:1px solid #fff;
 }
 
 header ul li + li + li {
-  border-right:none;
-  width:89px;
+    border-right:none;
+    width:89px;
 }
 
 header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
+    font-size:14px;
+    display:block;
+    color:#222;
 }
 
 section {
-  width:500px;
-  float:right;
-  padding-bottom:50px;
+    width:500px;
+    float:right;
+    padding-bottom:50px;
 }
 
 small {
-  font-size:11px;
+    font-size:11px;
 }
 
 hr {
-  border:0;
-  background:#e5e5e5;
-  height:1px;
-  margin:0 0 20px;
+    border:0;
+    background:#e5e5e5;
+    height:1px;
+    margin:0 0 20px;
 }
 
 /* Credits - http://stackoverflow.com/a/6182661/1383051 */
 div.frameT {
-  width: 100%;
-  padding: 0;
-  display: table;
-  height: 90%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
+    width: 100%;
+    padding: 0;
+    display: table;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
 
 /* Credits - http://stackoverflow.com/a/6182661/1383051 */
 div.frameTC {
-  padding: 0;
-  vertical-align: middle;
-  display: table-cell;
-  margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0;
 }
 
 /* Credits - http://stackoverflow.com/a/6182661/1383051 */
 div.content {
-  width: 900px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 10px;
-  font-size: 32px;
-  color: #4c4c4c;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+    color: #4c4c4c;
 }
 
 footer {
-  line-height: 20%;
-  margin: 0px auto;
-  margin-left: 21em;
-  bottom: 50px;
-  text-align: center;
+    line-height: 20%;
+    margin: 0px auto;
+    margin-left: 21em;
+    bottom: 50px;
+    text-align: center;
 }
 
 /* Credits - http://tympanus.net/Tutorials/CustomFileInputs/ */
 svg {
-  fill:currentColor;
-  padding-right:0.8em;
+    fill:currentColor;
+    padding-right:0.8em;
 }
 
 .inputFile {
-  width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
 }
 
 .inputFile + label {
@@ -241,27 +238,27 @@ svg {
     cursor: pointer;
     overflow: hidden;
     padding: 0.625rem 1.25rem;
+    -o-transition: background-color 0.15s linear;
+    -moz-transition: background-color 0.15s linear;
+    -khtml-transition: background-color 0.15s linear;
+    -webkit-transition: background-color 0.15s linear;
+    -ms-transition: background-color 0.15s linear;
+    transition: background-color 0.15s linear;
 }
 
 .inputFile:focus + label,
 .inputFile + label:hover {
-  background-color: #f51a6a;
-  -o-transition: background-color 0.15s linear;
-  -moz-transition: background-color 0.15s linear;
-  -khtml-transition: background-color 0.15s linear;
-  -webkit-transition: background-color 0.15s linear;
-  -ms-transition: background-color 0.15s linear;
-  transition: background-color 0.15s linear;
+    background-color: #f51a6a;
 }
 
 .wrapper {
-  width:860px;
-  margin:0 auto;
+    width:860px;
+    margin:0 auto;
 }
 
 .text {
-  margin: 0;
-  font-size: 90%;
+    margin: 0;
+    font-size: 90%;
 }
 
 @media print, screen and (max-width: 960px) {
