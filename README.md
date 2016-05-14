@@ -1,4 +1,4 @@
-### http://anishlr.github.io/HyperLightDrifterLocator/
+## http://anishlr.github.io/HyperLightDrifterLocator
 
 ### About
 Finished the game? Thought you collected all the gearbits? Didn't get the 'Shine Bright' achievement? Never fear! Upload your save file into this locator tool to find those missing gearbits.
