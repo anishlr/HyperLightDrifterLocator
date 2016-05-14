@@ -204,6 +204,10 @@ div.content {
     color: #4c4c4c;
 }
 
+div.contentInvisible {
+    display: none;
+}
+
 footer {
     line-height: 20%;
     margin: 0px auto;
@@ -259,6 +263,10 @@ svg {
 .text {
     margin: 0;
     font-size: 90%;
+}
+
+.gearbitInfo {
+    padding-bottom: 0.6em;
 }
 
 @media print, screen and (max-width: 960px) {
