@@ -107,11 +107,6 @@ a:hover small {
   color:#777;
 }
 
-.wrapper {
-  width:860px;
-  margin:0 auto;
-}
-
 blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;
@@ -343,7 +338,12 @@ div.content {
   color: #4c4c4c;
 }
 
+.text {
+  font-size: 50%
+}
+
 footer {
+  line-height:20%;
   width:270px;
   float:left;
   position:fixed;
