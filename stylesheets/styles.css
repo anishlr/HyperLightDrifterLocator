@@ -238,12 +238,12 @@ svg {
     cursor: pointer;
     overflow: hidden;
     padding: 0.625rem 1.25rem;
-    -o-transition: background-color 0.15s linear;
-    -moz-transition: background-color 0.15s linear;
-    -khtml-transition: background-color 0.15s linear;
-    -webkit-transition: background-color 0.15s linear;
-    -ms-transition: background-color 0.15s linear;
-    transition: background-color 0.15s linear;
+    -o-transition: background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    -khtml-transition: background-color 0.1s linear;
+    -webkit-transition: background-color 0.1s linear;
+    -ms-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear;
 }
 
 .inputFile:focus + label,
