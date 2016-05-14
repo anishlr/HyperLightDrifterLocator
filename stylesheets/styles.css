@@ -242,6 +242,16 @@ svg {
     padding: 0.625rem 1.25rem;
 }
 
+.inputFile:focus + label,
+.inputFile + label:hover {
+  background-color: #722040;
+}
+
+.inputFile:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 .wrapper {
   width:860px;
   margin:0 auto;
