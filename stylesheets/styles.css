@@ -40,8 +40,8 @@ footer {
     bottom: 50px;
     text-align: center;
 }
-/* Credits - http://stackoverflow.com/a/6182661/1383051 */
 
+/* Credits - http://stackoverflow.com/a/6182661/1383051 */
 div.frameT {
     width: 100%;
     padding: 0;
@@ -52,15 +52,14 @@ div.frameT {
     left: 0;
     margin: 0;
 }
-/* Credits - http://stackoverflow.com/a/6182661/1383051 */
 
+/* Credits - http://stackoverflow.com/a/6182661/1383051 */
 div.frameTC {
     padding: 0;
     vertical-align: middle;
     display: table-cell;
     margin: 0;
 }
-/* Credits - http://stackoverflow.com/a/6182661/1383051 */
 
 div.content {
     width: 900px;
@@ -69,12 +68,20 @@ div.content {
     padding: 10px;
     font-size: 32px;
     color: #4c4c4c;
+    opacity: 1;
+    -o-transition: opacity 0.1s linear;
+    -moz-transition: opacity 0.1s linear;
+    -khtml-transition: opacity 0.1s linear;
+    -webkit-transition: opacity 0.1s linear;
+    -ms-transition: opacity 0.1s linear;
+    transition: opacity 0.1s linear;
 }
 div.contentInvisible {
-    display: none;
+    //display: none;
+    opacity: 0;
 }
-/* Credits - http://tympanus.net/Tutorials/CustomFileInputs/ */
 
+/* Credits - http://tympanus.net/Tutorials/CustomFileInputs/ */
 svg {
     fill: currentColor;
     padding-right: 0.8em;
