@@ -5,7 +5,7 @@ Finished the game? Thought you collected all the gearbits? Didn't get the 'Shine
 
 ### How to Use
 Find and upload your save file into this tool.
-* PC - C:\Users[username]\AppData\Local\HyperLightDrifter\HyperLight_RecordOfTheDrifter_*.sav
+* Windows - C:\Users[username]\AppData\Local\HyperLightDrifter\HyperLight_RecordOfTheDrifter_*.sav
 * Mac - /Users/[username]/Library/Application Support/com.HeartMachine.HyperLightDrifter/HyperLight_RecordOfTheDrifter_*.sav
 * Linux - ~/.config/HyperLightDrifter/HyperLight_RecordOfTheDrifter_*.sav
 
