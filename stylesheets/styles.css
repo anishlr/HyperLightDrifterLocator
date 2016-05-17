@@ -69,12 +69,12 @@ div.content {
     font-size: 32px;
     color: #4c4c4c;
     opacity: 1;
-    -o-transition: opacity 0.1s linear;
-    -moz-transition: opacity 0.1s linear;
-    -khtml-transition: opacity 0.1s linear;
-    -webkit-transition: opacity 0.1s linear;
-    -ms-transition: opacity 0.1s linear;
-    transition: opacity 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -khtml-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    transition: all 0.1s linear;
 }
 div.contentInvisible {
     opacity: 0;
@@ -177,10 +177,9 @@ svg {
 }
 #content div {
     opacity: 0;
-    padding: 1.5em;
+    padding: 1em;
     position: absolute;
     z-index: -100;
-    transition: all linear 0.1s;
 }
 .gearbitInfo input#centralTownTab:checked ~ #content #centralTownContent,
 .gearbitInfo input#northTab:checked ~ #content #northContent,
