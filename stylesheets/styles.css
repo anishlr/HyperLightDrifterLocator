@@ -18,11 +18,8 @@ a {
     text-decoration: none;
     z-index: 2;
 }
-a small {
-    font-size: 11px;
-    color: #777;
-    margin-top: -0.6em;
-    display: block;
+a:hover {
+    border-bottom: dotted 0.5px;
 }
 footer {
     width: 270px;
@@ -182,6 +179,18 @@ svg {
 }
 #allCollectedP {
     color: #fcfaea;
+}
+#saveFileLocation {
+    font-size: 0.5em;
+    position: relative;
+}
+#saveFileLocationTooltip {
+    opacity: 0;
+    margin-left: 9em;
+    color: #fcfaea;
+    position: absolute;
+    top: 4em;
+    line-height: 0.5em;
 }
 @media print,
 screen and (max-width: 960px) {
