@@ -153,7 +153,8 @@ svg {
     border-top-style: solid;
     background: #464646;
     color: #fcfaea;
-    min-height: 20em;
+    height: 30em;
+    overflow-x: auto;
     margin-top: 1em;
     position: relative;
     width: 100%;
@@ -191,6 +192,12 @@ svg {
     position: absolute;
     top: 4em;
     line-height: 0.5em;
+    -o-transition: opacity 0.1s linear;
+    -moz-transition: opacity 0.1s linear;
+    -khtml-transition: opacity 0.1s linear;
+    -webkit-transition: opacity 0.1s linear;
+    -ms-transition: opacity 0.1s linear;
+    transition: opacity 0.1s linear;
 }
 @media print,
 screen and (max-width: 960px) {
