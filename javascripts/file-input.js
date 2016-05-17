@@ -206,3 +206,14 @@ function parseGearbitArray(collectedGearbits) {
         west: west
     };
 }
+
+function toggleSaveInfo() {
+    var tooltipControl = document.getElementById("saveFileLocationTooltip");
+    if (tooltipControl.style.opacity == 1) {
+        tooltipControl.style.opacity = 0;
+    } else {
+        tooltipControl.style.opacity = 1;
+    }
+}
+
+document.querySelector("#saveFileLocation a").addEventListener('click', toggleSaveInfo);
