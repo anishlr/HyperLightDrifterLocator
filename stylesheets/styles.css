@@ -9,6 +9,10 @@ body {
     font-weight: 300;
     background-color: #262626 !important;
 }
+ul {
+    list-style: square;
+    color: #f51a6a;
+}
 p {
     margin: 0 0 20px;
 }
@@ -20,6 +24,12 @@ a {
 }
 a:hover {
     border-bottom: dotted 0.5px;
+}
+li > a {
+    color: #fcfaea;
+}
+li > a:visited {
+    color: #a9a9a9;
 }
 footer {
     width: 270px;
