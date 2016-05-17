@@ -169,16 +169,19 @@ svg {
     z-index: -100;
     transition: all linear 0.1s;
 }
-.gearbitInfo input#centralTown:checked ~ #content #centralTownContent,
-.gearbitInfo input#north:checked ~ #content #northContent,
-.gearbitInfo input#south:checked ~ #content #southContent,
-.gearbitInfo input#east:checked ~ #content #eastContent,
-.gearbitInfo input#west:checked ~ #content #westContent {
+.gearbitInfo input#centralTownTab:checked ~ #content #centralTownContent,
+.gearbitInfo input#northTab:checked ~ #content #northContent,
+.gearbitInfo input#southTab:checked ~ #content #southContent,
+.gearbitInfo input#eastTab:checked ~ #content #eastContent,
+.gearbitInfo input#westTab:checked ~ #content #westContent {
     opacity: 1;
     z-index: 100;
 }
 .gearbitInfo input.visible {
     visibility: visible !important;
+}
+#allCollectedP {
+    color: #fcfaea;
 }
 @media print,
 screen and (max-width: 960px) {
