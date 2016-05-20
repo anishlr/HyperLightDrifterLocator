@@ -115,13 +115,15 @@ svg {
     font-size: 90%;
 }
 .footer {
-    position: relative;
+    position: fixed;
     float: bottom;
-    top: 23em;
-    width: 270px;
+    bottom: 2%;
+    width: 30%;
     line-height: 20%;
     text-align: center;
-    margin: 0 auto;
+    margin-left: 35%;
+    background-color: #262626;
+    padding-top: 2em;
 }
 /* Credits - http://codepen.io/CesarGabriel/pen/nLhAa */
 .gearbitInfo {
