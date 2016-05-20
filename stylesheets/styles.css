@@ -31,15 +31,6 @@ li > a {
 li > a:visited {
     color: #a9a9a9;
 }
-footer {
-    width: 270px;
-    float: left;
-    position: fixed;
-    line-height: 20%;
-    margin-left: 21em;
-    bottom: 50px;
-    text-align: center;
-}
 
 /* Credits - http://stackoverflow.com/a/6182661/1383051 */
 div.frameT {
@@ -123,8 +114,16 @@ svg {
     margin: 0;
     font-size: 90%;
 }
+.footer {
+    position: relative;
+    float: bottom;
+    top: 23em;
+    width: 270px;
+    line-height: 20%;
+    text-align: center;
+    margin: 0 auto;
+}
 /* Credits - http://codepen.io/CesarGabriel/pen/nLhAa */
-
 .gearbitInfo {
     padding-bottom: 0.6em;
     margin: 0 auto;
@@ -180,6 +179,9 @@ svg {
     padding: 1em;
     position: absolute;
     z-index: -100;
+}
+#content div ul {
+    text-align: left;
 }
 .gearbitInfo input#centralTownTab:checked ~ #content #centralTownContent,
 .gearbitInfo input#northTab:checked ~ #content #northContent,
