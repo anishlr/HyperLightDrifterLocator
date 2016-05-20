@@ -1,20 +1,66 @@
 /*
-  By Osvaldas Valutis, www.osvaldas.info
-  Available for use under the MIT License
+  Adapted the original code by Osvaldas Valutis, www.osvaldas.info.
+  Available for use under the MIT License.
 */
 'use strict';
 
 var GEARBIT_NUMBER_MAPPING = {
-    "1": {
-        "type": "centralTown",
-        "link": "http://www.google.com"
+    "north": {
+        "-1372159": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=6m20s",
+        "-1937851": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=7m12s",
+        "-1915296": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=9m07s",
+        "-1153846": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=9m15s",
+        "-1914165": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=9m55s",
+        "-1102820": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=12m28s",
+        "-1102059": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=12m40s",
+        "-1096923": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=14m26s",
+        "-1095173": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=15m04s",
+        "-1078558": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=17m22s",
+        "-1066739": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=18m26s",
+        "-1065935": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=18m53s",
+        "-997450": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=21m26s",
+        "-995622": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=22m42s",
+        "-967035": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=26m16s",
+        "-956949": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=27m01s",
+        "-952463": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=28m24s",
+        "-934767": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=30m23s",
+        "-928455": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=32m35s",
+        "-917792": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=33m02s",
+        "-907251": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=34m06s",
+        "-1052014": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=36m26s",
+        "-1036027": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=36m47s",
+        "-1465613": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=40m03s",
+        "-1938018": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=40m26s",                // This one is in central town
+        "-826553": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=41m58s",
+        "-1881891": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=43m04s",
+        "-806721": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=44m22s",
+        "-816405": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=45m09s",
+        "-805940": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=45m29s",
+        "-805800": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=45m44s",
+        "-1016165": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=46m00s",
+        "-788905.90": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=48m26s",
+        "-788905.70": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=48m26s",
+        "-788905.80": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=48m26s",
+        "-1066018": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=51m12s",
+        "-1133350": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=55m05s",
+        "-1138373": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=56m54s",
+        "-882399": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=58m53s",
+        "-876954": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=59m51s",
+        "-874835": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=01h37s",
+        "-1887473": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=01h01m11s",
+        "-867435": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=01h02m08s",
+        "-862569": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=01h06m06s",
+        "-852962": "https://www.youtube.com/watch?v=zI0Wdnu9D7U01h01m11s"
+    },
+    "east": {
+    },
+    "west": {
+    },
+    "south": {
+    },
+    "centralTown": {
     }
 };
-var DEFAULT_GEARBIT_INFO = {
-    "type": "centralTown",
-    "link": "http://www.google.com"
-};
-
 var SAVE_COLLECTIBLES_IDENTIFIER = 'cl';
 var SAVE_GEARBIT_FIELD_ID = "0=";
 var SAVE_COLLECTIBLES_FIELD_DELIMITER = ">";
@@ -25,7 +71,7 @@ var GEARBIT_INFO_CONTENT_WRAPPER_HTML_START = '<div id="content">';
 var GEARBIT_INFO_CONTENT_WRAPPER_HTML_END = '</div>';
 var GEARBIT_INFO_HTML = {
     "centralTown": {
-        "tab": '<input id="centralTownTab" type="radio" name="tab-group" checked="checked" /> <label for="centralTownTab">Central Town</label>',
+        "tab": '<input id="centralTownTab" type="radio" name="tab-group" /> <label for="centralTownTab">Central Town</label>',
         "contentStart": '<div id="centralTownContent"><ul>',
         "contentEnd": '</ul></div>'
     },
@@ -95,7 +141,6 @@ function parseSaveContents(e) {
 }
 
 function showGearbitInfo(gearbitArray) {
-    console.log(gearbits);
     var gearbitInfoWrapperControl = document.getElementById("gearbitInfoWrapper");
     var uploadButtonControl = document.getElementById("uploadButton");
     var gearbitInfoControl = document.getElementById("gearbitInfo");
@@ -107,109 +152,73 @@ function showGearbitInfo(gearbitArray) {
     uploadButtonControl.removeAttribute("content");
     uploadButtonControl.className = "contentInvisible";
 
-    var gearbits = parseGearbitArray(gearbitArray);
-
-    if (gearbits.centralTown.length > 0) {
-        gearbitInfoHtml += GEARBIT_INFO_HTML.centralTown.tab;
+    var missingGearbits = parseGearbitArray(gearbitArray);
+    
+    // First construct the HTML for the tabs based on the missing gearbits
+    for(var zone in missingGearbits) {
+        if(missingGearbits.hasOwnProperty(zone)) {
+            if(missingGearbits[zone].length > 0) {
+                gearbitInfoHtml += GEARBIT_INFO_HTML[zone].tab;
+            }
+        }
     }
-    if (gearbits.north.length > 0) {
-        gearbitInfoHtml += GEARBIT_INFO_HTML.north.tab;
-    }
-    if (gearbits.south.length > 0) {
-        gearbitInfoHtml += GEARBIT_INFO_HTML.south.tab;
-    }
-    if (gearbits.east.length > 0) {
-        gearbitInfoHtml += GEARBIT_INFO_HTML.east.tab;
-    }
-    if (gearbits.west.length > 0) {
-        gearbitInfoHtml += GEARBIT_INFO_HTML.west.tab;
-    }
-    if (gearbitInfoHtml.length > 0) {
-        var i = 0;
+    
+    // Then add in the HTML for each missing gearbit, if there were any
+    if(gearbitInfoHtml.length > 0) {
         gearbitInfoHtml += GEARBIT_INFO_CONTENT_WRAPPER_HTML_START;
-        if (gearbits.centralTown.length > 0) {
-            gearbitInfoHtml += GEARBIT_INFO_HTML.centralTown.contentStart;
-            for (i = 0; i < gearbits.centralTown.length; i++) {
-                gearbitInfoHtml += '<li><a target="_blank" href="' + gearbits.centralTown[i] + '">' + gearbits.centralTown[i] + '</a></li>';
+        for(var zone in missingGearbits) {
+            if(missingGearbits.hasOwnProperty(zone)) {
+                if(missingGearbits[zone].length > 0) {
+                    gearbitInfoHtml += GEARBIT_INFO_HTML[zone].contentStart;
+                    for(var i = 0; i < missingGearbits[zone].length; i++) {
+                        for(var gearbit in missingGearbits[zone][i]) {
+                            if(missingGearbits[zone][i].hasOwnProperty(gearbit)) {
+                                gearbitInfoHtml += '<li><a target="_blank" href="' + missingGearbits[zone][i][gearbit] + '">' + missingGearbits[zone][i][gearbit] + '</a></li>';
+                            }
+                        }
+                		}
+                    gearbitInfoHtml += GEARBIT_INFO_HTML[zone].contentEnd;
+                }
             }
-            gearbitInfoHtml += GEARBIT_INFO_HTML.centralTown.contentEnd;
-        }
-        if (gearbits.north.length > 0) {
-            gearbitInfoHtml += GEARBIT_INFO_HTML.north.contentStart;
-            for (i = 0; i < gearbits.north.length; i++) {
-                gearbitInfoHtml += '<li><a target="_blank" href="' + gearbits.north[i] + '">' + gearbits.north[i] + '</a></li>';
-            }
-            gearbitInfoHtml += GEARBIT_INFO_HTML.north.contentEnd;
-        }
-        if (gearbits.south.length > 0) {
-            gearbitInfoHtml += GEARBIT_INFO_HTML.south.contentStart;
-            for (i = 0; i < gearbits.south.length; i++) {
-                gearbitInfoHtml += '<li><a target="_blank" href="' + gearbits.south[i] + '">' + gearbits.south[i] + '</a></li>';
-            }
-            gearbitInfoHtml += GEARBIT_INFO_HTML.south.contentEnd;
-        }
-        if (gearbits.east.length > 0) {
-            gearbitInfoHtml += GEARBIT_INFO_HTML.east.contentStart;
-            for (i = 0; i < gearbits.east.length; i++) {
-                gearbitInfoHtml += '<li><a target="_blank" href="' + gearbits.east[i] + '">' + gearbits.east[i] + '</a></li>';
-            }
-            gearbitInfoHtml += GEARBIT_INFO_HTML.east.contentEnd;
-        }
-        if (gearbits.west.length > 0) {
-            gearbitInfoHtml += GEARBIT_INFO_HTML.west.contentStart;
-            for (i = 0; i < gearbits.west.length; i++) {
-                gearbitInfoHtml += '<li><a target="_blank" href="' + gearbits.west[i] + '">' + gearbits.west[i] + '</a></li>';
-            }
-            gearbitInfoHtml += GEARBIT_INFO_HTML.west.contentEnd;
         }
         gearbitInfoHtml += GEARBIT_INFO_CONTENT_WRAPPER_HTML_END;
     } else {
         gearbitInfoHtml = GEARBIT_INFO_ALL_COLLECTED_HTML;
     }
-
+    
     gearbitInfoControl.innerHTML = gearbitInfoHtml;
+    
+    if(gearbitInfoHtml.length > 0) {
+        // Make sure the first tab is selected
+        var firstInputTabControl = document.querySelector("#gearbitInfo input");
+        firstInputTabControl.checked = true;
+    }
 }
 
 function parseGearbitArray(collectedGearbits) {
-    var centralTown = [];
-    var north = [];
-    var south = [];
-    var east = [];
-    var west = [];
-
-    var allGearbits = Object.keys(GEARBIT_NUMBER_MAPPING);
-    var missingGearbits = allGearbits.diff(collectedGearbits);
-    for (var i = 0; i < missingGearbits.length; i++) {
-        var gearbitInfo = GEARBIT_NUMBER_MAPPING[missingGearbits[i]] || DEFAULT_GEARBIT_INFO;
-        if (gearbitInfo.type == "centralTown") {
-            centralTown.push(gearbitInfo.link);
-        }
-        if (gearbitInfo.type == "north") {
-            north.push(gearbitInfo.link);
-        }
-        if (gearbitInfo.type == "south") {
-            south.push(gearbitInfo.link);
-        }
-        if (gearbitInfo.type == "east") {
-            east.push(gearbitInfo.link);
-        }
-        if (gearbitInfo.type == "west") {
-            west.push(gearbitInfo.link);
+    var missingGearbits = {};
+    
+    for(var zone in GEARBIT_NUMBER_MAPPING) {
+        if(GEARBIT_NUMBER_MAPPING.hasOwnProperty(zone)) {
+            var allGearbitsInThisZone = Object.keys(GEARBIT_NUMBER_MAPPING[zone]);
+            var gearbitsMissingInThisZone = allGearbitsInThisZone.diff(collectedGearbits);
+            
+            missingGearbits[zone] = [];
+            
+            for (var i = 0; i < gearbitsMissingInThisZone.length; i++) {
+                var missingGearbitInfo = {};
+                missingGearbitInfo[gearbitsMissingInThisZone[i]] = GEARBIT_NUMBER_MAPPING[zone][gearbitsMissingInThisZone[i]];
+                missingGearbits[zone].push(missingGearbitInfo);
+            }
         }
     }
-
-    return {
-        centralTown: centralTown,
-        north: north,
-        south: south,
-        east: east,
-        west: west
-    };
+    
+    return missingGearbits;
 }
 
 function toggleSaveInfo() {
     var tooltipControl = document.getElementById("saveFileLocationTooltip");
-    if (tooltipControl.style.opacity == 1) {
+    if(tooltipControl.style.opacity == 1) {
         tooltipControl.style.opacity = 0;
     } else {
         tooltipControl.style.opacity = 1;
