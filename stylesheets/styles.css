@@ -123,7 +123,7 @@ svg {
     text-align: center;
     margin-left: 35%;
     background-color: #262626;
-    padding-top: 2em;
+    padding-top: 5%;
 }
 /* Credits - http://codepen.io/CesarGabriel/pen/nLhAa */
 .gearbitInfo {
@@ -178,7 +178,6 @@ svg {
 }
 #content div {
     opacity: 0;
-    padding: 1em;
     position: absolute;
     z-index: -100;
 }
