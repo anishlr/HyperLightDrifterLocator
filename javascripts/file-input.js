@@ -147,17 +147,22 @@ Array.prototype.diff = function(a) {
     });
 };
 
+function inputFileChange() {
+    // There should only be one file since the input element doesn't allow for selecting multiple files
+    var selectedFile = this.files[0];
+    if (selectedFile) {
+        var reader = new FileReader();
+        reader.onload = parseSaveContents;
+        reader.readAsText(selectedFile);
+    }
+}
+
 (function(document, window, index) {
-    var inputFile = document.getElementById('inputFile');
-    inputFile.addEventListener('change', function(e) {
-        // There should only be one file since the input element doesn't allow for selecting multiple files
-        var selectedFile = this.files[0];
-        if (selectedFile) {
-            var reader = new FileReader();
-            reader.onload = parseSaveContents;
-            reader.readAsText(selectedFile);
-        }
-    });
+    var inputFileControl = document.getElementById('inputFile');
+    inputFileControl.addEventListener('change', inputFileChange);
+    
+    var anotherInputFileControl = document.getElementById('anotherInputFile');
+    anotherInputFile.addEventListener('change', inputFileChange);
 }(document, window, 0));
 
 function parseSaveContents(e) {
@@ -239,7 +244,9 @@ function showGearbitInfo(gearbitArray) {
     if(gearbitInfoHtml.length > 0) {
         // Make sure the first tab is selected
         var firstInputTabControl = document.querySelector("#gearbitInfo input");
-        firstInputTabControl.checked = true;
+        if(firstInputTabControl) {
+            firstInputTabControl.checked = true;
+        }
     }
 }
 
