@@ -212,10 +212,10 @@ function inputFileChange() {
 function parseSaveContents(e) {
     try {
         var decodedSave = window.atob(e.target.result);
-    } catch(e) {
-        alert("Invalid save file");
+    } catch(error) {
+        notie.alert(3, "Invalid save file", 2.5);
+        return;
     }
-    console.log(decodedSave);
     var nullTerminatedSave = '{"' + decodedSave.substring(decodedSave.indexOf(SAVE_COLLECTIBLES_IDENTIFIER), decodedSave.length);
 
     // Remove the trailing null terminator
@@ -227,7 +227,7 @@ function parseSaveContents(e) {
         // The save will now contain information on many other things like number of deaths, enemies killed, etc. We need only the gearbit information
         collectibles = save[SAVE_COLLECTIBLES_IDENTIFIER];
     } catch (error) {
-        alert("Invalid save file.");
+        notie.alert(3, "Invalid save file.", 2.5);
         return;
     }
 
