@@ -49,7 +49,7 @@ var GEARBIT_NUMBER_MAPPING = {
         "-1887473": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=1h1m11s",
         "-867435": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=1h2m8s",
         "-862569": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=1h6m6s",
-        "-852962": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=1h1m11s"
+        "-852962": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=1h1m11s",
         "-188000": "https://www.youtube.com/watch?v=eqJS4c7n8Xs#t=1m46s",
         "-172543": "https://www.youtube.com/watch?v=eqJS4c7n8Xs#t=3m34s",
         "-67920": "https://www.youtube.com/watch?v=eqJS4c7n8Xs#t=5m",
@@ -148,9 +148,9 @@ var GEARBIT_NUMBER_MAPPING = {
         "133144": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h16m14s",
         "111315": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h16m54s",
         "-1977727": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h18m37s",
-        "227097": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h19m57s"
-        "145250": "https://www.youtube.com/watch?v=eqJS4c7n8Xs#t=12m36s"
-        "265682": "https://www.youtube.com/watch?v=eqJS4c7n8Xs#t=13m56s"
+        "227097": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h19m57s",
+        "145250": "https://www.youtube.com/watch?v=eqJS4c7n8Xs#t=12m36s",
+        "265682": "https://www.youtube.com/watch?v=eqJS4c7n8Xs#t=13m56s",
         "422827": "https://www.youtube.com/watch?v=eqJS4c7n8Xs#t=15m34s"
     },
     "south": {
