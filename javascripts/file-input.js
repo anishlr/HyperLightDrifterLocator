@@ -199,7 +199,7 @@ var GEARBIT_NUMBER_MAPPING = {
         "-1324377": "https://www.youtube.com/watch?v=eqJS4c7n8Xs#t=26m24s",
         "-1387712": "https://www.youtube.com/watch?v=FXXqQa1nvG0",
         "-1386474": "https://www.youtube.com/watch?v=5jjzNgwwtzw",
-        "-1283621": "https://www.youtube.com/watch?v=2sCaNwWbjtQ"
+        "-1283621": "https://www.youtube.com/watch?v=d9dqdEEkaqc"
     }
 };
 var SAVE_COLLECTIBLES_IDENTIFIER = 'cl';
