@@ -258,7 +258,7 @@ function inputFileChange() {
 (function(document, window, index) {
     var inputFileControl = document.getElementById('inputFile');
     inputFileControl.addEventListener('change', inputFileChange);
-    
+
     var anotherInputFileControl = document.getElementById('anotherInputFile');
     anotherInputFileControl.addEventListener('change', inputFileChange);
 }(document, window, 0));
@@ -266,7 +266,7 @@ function inputFileChange() {
 function parseSaveContents(e) {
     try {
         var decodedSave = window.atob(e.target.result);
-    } catch(error) {
+    } catch (error) {
         notie.alert(3, "Invalid save file", 2.5);
         return;
     }
@@ -304,30 +304,30 @@ function showGearbitInfo(gearbitArray) {
     uploadButtonControl.className = "contentInvisible";
 
     var missingGearbits = parseGearbitArray(gearbitArray);
-    
+
     // First construct the HTML for the tabs based on the missing gearbits
-    for(var zone in missingGearbits) {
-        if(missingGearbits.hasOwnProperty(zone)) {
-            if(missingGearbits[zone].length > 0) {
+    for (var zone in missingGearbits) {
+        if (missingGearbits.hasOwnProperty(zone)) {
+            if (missingGearbits[zone].length > 0) {
                 gearbitInfoHtml += GEARBIT_INFO_HTML[zone].tab;
             }
         }
     }
-    
+
     // Then add in the HTML for each missing gearbit, if there were any
-    if(gearbitInfoHtml.length > 0) {
+    if (gearbitInfoHtml.length > 0) {
         gearbitInfoHtml += GEARBIT_INFO_CONTENT_WRAPPER_HTML_START;
-        for(var zone in missingGearbits) {
-            if(missingGearbits.hasOwnProperty(zone)) {
-                if(missingGearbits[zone].length > 0) {
+        for (var zone in missingGearbits) {
+            if (missingGearbits.hasOwnProperty(zone)) {
+                if (missingGearbits[zone].length > 0) {
                     gearbitInfoHtml += GEARBIT_INFO_HTML[zone].contentStart;
-                    for(var i = 0; i < missingGearbits[zone].length; i++) {
-                        for(var gearbit in missingGearbits[zone][i]) {
-                            if(missingGearbits[zone][i].hasOwnProperty(gearbit)) {
+                    for (var i = 0; i < missingGearbits[zone].length; i++) {
+                        for (var gearbit in missingGearbits[zone][i]) {
+                            if (missingGearbits[zone][i].hasOwnProperty(gearbit)) {
                                 gearbitInfoHtml += '<li><a target="_blank" href="' + missingGearbits[zone][i][gearbit] + '">' + missingGearbits[zone][i][gearbit] + '</a></li>';
                             }
                         }
-                		}
+                    }
                     gearbitInfoHtml += GEARBIT_INFO_HTML[zone].contentEnd;
                 }
             }
@@ -336,13 +336,13 @@ function showGearbitInfo(gearbitArray) {
     } else {
         gearbitInfoHtml = GEARBIT_INFO_ALL_COLLECTED_HTML;
     }
-    
+
     gearbitInfoControl.innerHTML = gearbitInfoHtml;
-    
-    if(gearbitInfoHtml.length > 0) {
+
+    if (gearbitInfoHtml.length > 0) {
         // Make sure the first tab is selected
         var firstInputTabControl = document.querySelector("#gearbitInfo input");
-        if(firstInputTabControl) {
+        if (firstInputTabControl) {
             firstInputTabControl.checked = true;
         }
     }
@@ -350,14 +350,14 @@ function showGearbitInfo(gearbitArray) {
 
 function parseGearbitArray(collectedGearbits) {
     var missingGearbits = {};
-    
-    for(var zone in GEARBIT_NUMBER_MAPPING) {
-        if(GEARBIT_NUMBER_MAPPING.hasOwnProperty(zone)) {
+
+    for (var zone in GEARBIT_NUMBER_MAPPING) {
+        if (GEARBIT_NUMBER_MAPPING.hasOwnProperty(zone)) {
             var allGearbitsInThisZone = Object.keys(GEARBIT_NUMBER_MAPPING[zone]);
             var gearbitsMissingInThisZone = allGearbitsInThisZone.diff(collectedGearbits);
-            
+
             missingGearbits[zone] = [];
-            
+
             for (var i = 0; i < gearbitsMissingInThisZone.length; i++) {
                 var missingGearbitInfo = {};
                 missingGearbitInfo[gearbitsMissingInThisZone[i]] = GEARBIT_NUMBER_MAPPING[zone][gearbitsMissingInThisZone[i]];
@@ -365,13 +365,13 @@ function parseGearbitArray(collectedGearbits) {
             }
         }
     }
-    
+
     return missingGearbits;
 }
 
 function toggleSaveInfo() {
     var tooltipControl = document.getElementById("saveFileLocationTooltip");
-    if(tooltipControl.style.opacity == 1) {
+    if (tooltipControl.style.opacity == 1) {
         tooltipControl.style.opacity = 0;
     } else {
         tooltipControl.style.opacity = 1;
