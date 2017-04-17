@@ -37,9 +37,9 @@ var GEARBIT_NUMBER_MAPPING = {
         "-805940": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=45m29s",
         "-805800": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=45m44s",
         "-1016165": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=46m",
-        "-788905.90": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=48m26s",
-        "-788905.70": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=48m26s",
-        "-788905.80": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=48m26s",
+        "G12110931": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=48m26s",
+        "G12110932": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=48m26s",
+        "G12110933": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=48m26s",
         "-1066018": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=51m12s",
         "-1133350": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=55m5s",
         "-1138373": "https://www.youtube.com/watch?v=zI0Wdnu9D7U#t=56m54s",
@@ -90,9 +90,9 @@ var GEARBIT_NUMBER_MAPPING = {
         "-66916": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=43m42s",
         "-57427": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=46m42s",
         "-53799": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=46m43s",
-        "-45676.70": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=49m49s",
-        "-45676.80": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=49m50s",
-        "-45676.90": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=49m51s",
+        "G19543221": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=49m49s",
+        "G19543222": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=49m49s",
+        "G19543223": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=49m49s",
         "-53992": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=51m8s",
         "-18775": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=52m16s",
         "-8152": "https://www.youtube.com/watch?v=GVg-tbkVNro#t=54m19s",
@@ -141,9 +141,9 @@ var GEARBIT_NUMBER_MAPPING = {
         "436752": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h1m35s",
         "421525": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h4m54s",
         "446178": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h6m6s",
-        "452706.10": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h9m3s",
-        "452706.20": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h9m4s",
-        "452706.30": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h9m5s",
+        "G24527051": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h9m3s",
+        "G24527052": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h9m3s",
+        "G24527053": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h9m3s",
         "466844": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h11m1s",
         "133144": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h16m14s",
         "111315": "https://www.youtube.com/watch?v=-s3lmcTr1eg#t=1h16m54s",
@@ -158,27 +158,27 @@ var GEARBIT_NUMBER_MAPPING = {
         "-1363871": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=5m44s",
         "-526738": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=10m13s",
         "-1851787": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=11m45s",
-        "-494801.70": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=13m10s",
-        "-494801.80": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=13m10s",
-        "-494801.90": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=13m10s",
+        "G15051971": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=13m10s",
+        "G15051972": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=13m10s",
+        "G15051973": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=13m10s",
         "-414219": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=15m30s",
         "-602282": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=18m11s",
         "-604612": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=18m42s",
         "-602430": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=19m27s",
         "-596335": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=23m57s",
         "-575080": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=27m6s",
-        "-563608.90": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=28m42s",
-        "-563608.80": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=28m42s",
-        "-563608.70": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=28m42s",
+        "G14363901": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=28m42s",
+        "G14363902": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=28m42s",
+        "G14363903": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=28m42s",
         "-693122": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=31m14s",
         "-458257": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=33m14s",
         "-454506": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=33m40s",
         "-455008": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=34m",
         "-1844720": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=35m55s",
         "-1844346": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=36m26s",
-        "-427921.90": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=38m14s",
-        "-427921.80": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=38m14s",
-        "-427921.70": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=38m14s",
+        "G15720771": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=38m14s",
+        "G15720772": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=38m14s",
+        "G15720773": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=38m14s",
         "-477441": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=41m47s",
         "-396006": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=44m20s",
         "-396384": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=44m54s",
@@ -187,9 +187,9 @@ var GEARBIT_NUMBER_MAPPING = {
         "-388544": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=48m40s",
         "-374065": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=49m",
         "-368661": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=49m29s",
-        "-356322.80": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=50m25s",
-        "-356322.90": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=50m25s",
-        "-356322.70": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=50m25s",
+        "G16436761": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=50m25s",
+        "G16436762": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=50m25s",
+        "G16436763": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=50m25s",
         "-704869": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=54m42s",
         "-1852747": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=56m2s",
         "-693856": "https://www.youtube.com/watch?v=ZwYBoZq5vIY#t=58m16s",
@@ -203,9 +203,11 @@ var GEARBIT_NUMBER_MAPPING = {
     }
 };
 var SAVE_COLLECTIBLES_IDENTIFIER = 'cl';
+var SAVE_BOSSGEARBITS_IDENTIFIER = 'cl';
 var SAVE_GEARBIT_FIELD_ID = "0=";
 var SAVE_COLLECTIBLES_FIELD_DELIMITER = ">";
 var SAVE_GEARBIT_FIELD_DELIMITER = "&";
+var SAVE_BOSSGEARBITS_FIELD_DELIMITER = "+";
 
 var GEARBIT_INFO_ALL_COLLECTED_HTML = '<p id="allCollectedP">All gearbits collected!</p>';
 var GEARBIT_INFO_CONTENT_WRAPPER_HTML_START = '<div id="content">';
@@ -275,11 +277,13 @@ function parseSaveContents(e) {
     // Remove the trailing null terminator
     var saveString = nullTerminatedSave.toString().replace(/\0/g, "");
     var collectibles = [];
+    var bossGearbits = [];
 
     try {
         var save = JSON.parse(saveString);
         // The save will now contain information on many other things like number of deaths, enemies killed, etc. We need only the gearbit information
         collectibles = save[SAVE_COLLECTIBLES_IDENTIFIER];
+        bossGearbits = save[SAVE_BOSSGEARBITS_IDENTIFIER];
     } catch (error) {
         notie.alert(3, "Invalid save file.", 2.5);
         return;
@@ -288,7 +292,7 @@ function parseSaveContents(e) {
     var gearbitFieldStartIndex = collectibles.indexOf(SAVE_GEARBIT_FIELD_ID) + SAVE_GEARBIT_FIELD_ID.length;
     var gearbitString = collectibles.substring(gearbitFieldStartIndex, collectibles.indexOf(SAVE_COLLECTIBLES_FIELD_DELIMITER, gearbitFieldStartIndex));
 
-    showGearbitInfo(gearbitString.split(SAVE_GEARBIT_FIELD_DELIMITER));
+    showGearbitInfo(gearbitString.split(SAVE_GEARBIT_FIELD_DELIMITER) + bossGearbits.split(SAVE_BOSSGEARBITS_FIELD_DELIMITER));
 }
 
 function showGearbitInfo(gearbitArray) {
